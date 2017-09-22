@@ -3,8 +3,7 @@ pipeline {
    stages {
    stage('Test') {
      steps {
-        sh 'su  admin'
-        sh 'docker build .'
+        sh './test.sh'
         sh 'svn --version'
      }
    }
