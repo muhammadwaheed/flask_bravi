@@ -3,7 +3,7 @@ pipeline {
    stages {
    stage('Test') {
      steps {
-        sh './test.sh'
+        sh 'docker -t wancloudsinc/netorc-base -f Dockerfile .'
         sh 'svn --version'
      }
    }
