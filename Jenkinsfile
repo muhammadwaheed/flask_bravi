@@ -11,6 +11,7 @@ pipeline {
    stage('Push') {
      steps {
         echo 'Pushing images on docker hub'
+        
         sh 'docker push wancloudsinc/netorc:latest'
         sh 'docker push wancloudsinc/netorc:nfdump'
      }
