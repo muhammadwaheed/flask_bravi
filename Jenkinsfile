@@ -22,6 +22,7 @@ pipeline {
         sh 'docker rmi wancloudsinc/netorc:latest'
         sh 'docker rmi wancloudsinc/netorc:nfdump'
      }
+     
    }
   }
 }
